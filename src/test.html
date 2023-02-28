@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<style>
+    /*
+    gap item之间间隔固定
+    flex-wrap: wrap;根据宽度换行
+    */
+.father{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: start;
+    background-color: #ffefb3;
+    width: 80vw;
+    /*height: 80vh;*/
+
+}
+.father div{
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 300px;
+    background-color: #747bff;
+    color: white;
+}
+</style>
+<body>
+<div class="father">
+    <div>today</div>
+    <div>dic</div>
+    <div>January AAAAA AAAAA AAAAAA AAAAAA AAAAAAA AAA AAA AA AAAAA</div>
+    <div>February BB BBB BBBBB BBBB BBBBBBBBB BBB BBBBB BBBB BB BBBB</div>
+</div>
+</body>
+</html>
